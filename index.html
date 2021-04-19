@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aloa</title>
+    <title>hey babe, it's grigusky</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-    <h1>cool cool cool</h1>
+    <header>
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center black-text">Grégoire</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/festival.jpg"  style="height: 100%;"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">Pourquoi adopter un Grégoire ?</h2>
+            <p class="grey-text text-darken-3 lighten-3">
+                Le Grégoire est une sorte de prince charmant, il est là pour vous tenir dans ses bras, vous faire rire, vous redonner goût dans la vie.
+                Quand vous rentrerez le soir il vous massera devant le repas qu'il vous aura préparé, bref, une bonne dose de love.
+            </p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/IMG_20201231_180318.jpg"></div>
+    </div>
+
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="images/young.png"></a>
+        <a class="carousel-item" href="#two!"><img src="images/IMG-20200322-WA0000.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="images/IMG-20200322-WA0004.jpg"></a>
+    </div>
+    <div class="card-panel grey white-text">La légende raconte que dans la famille nous concevons de magnifiques bébés</div>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/pp.jpg"
+                        style="width: 80%; margin-left: 10%; border-radius: 100%; image-orientation: 30deg;"
+                        class="center-align">
+                </div>
+                <div class="card-content">
+                    <span class="card-title center">Mensuration d'un Grégoire</span>
+                    <ul>
+                        <li>taille: 1m90</li>
+                        <li>masse: 1 bon quintal de love</li>
+                    </ul>
+                </div>
+                <div class="card-action center">
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">adopte un Grégoire</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/IMG_20200523_010726_189.jpg" style="margin-left: 100px;"><span>Oui il peut faire ça</span></div>
+    </div>
+
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="images/SmartSelect_20210413-191517_Gallery.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="images/IMG-20210401-WA0000.jpeg"></a>
+        <a class="carousel-item" href="#three!"><img src="images/IMG_20210404_214611_01.jpg"></a>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title center">Réservation et service après vente</span>
+                    <p>La réservation est à effectuer sur un coup de tête et n'est malheureusement pas annulable, en
+                        effet, vous n'oublirez jamais les moments passés avec lui <3< /p>
+                </div>
+                <div class="card-action center">
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">adopte un Grégoire</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Nos liens:</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.facebook.com/grizlidu44/photos">facebook</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.instagram.com/griguskymnr/">instagram</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.linkedin.com/in/gr%C3%A9goire-meunier-77513510b/">linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Pour adopter un Grégoire</h4>
+            <p>Merci de contacter Audrey P.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    M.AutoInit();
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, options);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, options);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, options);
+    });
+    var instance = M.Carousel.init({
+        fullWidth: true
+    });
+</script>
+
 </html>
